@@ -1,0 +1,18 @@
+<html>
+   <body>
+      <form>
+         <p><h3>Hello {{ username }} </h3></p>
+         <p><h3>Project List:</h3></p>
+         <b><a href = '/system'>System Metrics</a></b>
+         <br>
+         <b><a href = '/sensor'>Sensor Data</a></b>
+         <br>
+         <b><a href = '/points'>Points</a></b>
+         <br>
+         <b><a href = "{{ url_for('new_user') }}" >Add User</a><b>
+         <br><br>
+         <b><a href = '/logout'>click here to log out</a></b>
+      </form>
+   </body>
+</html>
+

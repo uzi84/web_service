@@ -1,0 +1,21 @@
+<html>
+   <body>
+      <h1>Login</h1>
+      {% if error %}
+      <p><strong>Error:</strong> {{ error }}
+      {% endif %}   
+      <form action = "/login" method = "POST">
+         <dl>
+            <dt>Username:</dt>
+            <dd>
+                <input type = 'text' name = 'username'/>
+            </dd>
+            <dt>Password:</dt>
+            <dd>
+                <input type = 'text' name = 'passwd'/>
+            </dd>
+         </dl>
+         <p><input type = 'submit' value = 'Login'/></p>
+      </form>
+   </body>
+</html>
